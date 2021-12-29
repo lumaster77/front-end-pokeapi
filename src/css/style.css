@@ -1,0 +1,126 @@
+body{
+    background: linear-gradient(#1FE5BD, #D22780);
+    
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    
+}
+h1{
+    text-align: center;
+}
+#head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    
+    
+}
+input {
+    width:100%;
+}
+
+.container{
+    color: lightgray;
+    display: flex;
+    justify-content: center ;
+    width: auto;
+    height: auto;
+}
+
+.containerCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5% / 10%;
+    background-color: #5E227F;
+    border: solid 1px #002 ;
+    box-shadow: 5px 20px 20px black ;
+}
+.containerCardHeader{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px white;
+    padding: 1px 10px 1px 10px;
+    font-size: larger;
+}
+
+.containerCardBody{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    background-color: #41A7B3;
+}
+
+.containerCardBodyImage{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    border-radius: 10%;
+    
+}
+.containerCardBodyImage img{
+    width: 150px;
+    height: 150px;
+}
+.containerCardBodySpecies{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    border-top: solid 2px #002 ;
+       
+}
+
+#species{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-bottom: 3px;
+    
+}
+
+
+
+.containerCardFooter{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.continerCardFooterInfo div {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    
+}
+
+.continerCardFooterInfo div p {
+    padding: 1px 5px 1px 5px;
+    
+}
+#stats {
+    border-bottom: solid 1px black;
+}
+
+.containerCardFooterAbility{
+    
+    
+    
+
+}
+
+#abilitys {
+    background-color: #002;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#abilitys div {
+    padding: 10px;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <h1>Pokedex </h1>
+    <div id="head">
+        <div>
+            <input type="text" name="" id="search">
+        </div>
+        <div>
+            <input type="button" id="btnSearch" onclick="findOnePokemon()" value="buscar">
+        </div>
+        
+    </div>
+    <div id="pokemons" class="container">
+       <div id="cardPokemon" class="containerCard">
+        <div class="containerCardHeader">
+            <div class="containerCardHeaderTitle"></div>
+            <div class="containerCardHeaderNumber"></div>
+        </div>
+        <div class="containerCardBody">
+            <div class="containerCardBodyImage">
+                <img class="containerCardBodyImageSprites" src="" alt="">
+            </div>
+            <div class="containerCardBodySpecies">
+                <div id="species"></div>
+            </div>
+        </div>
+        <div class="containerCardFooter">
+            <div class="continerCardFooterInfo">
+                <p id="stats">Estadisticas</p>
+                <div>
+                    <p id="height"></p>
+                    <p id="weight"></p>
+                </div>
+                <div>
+                    <p id="hp"></p>
+                    <p id="attack"></p>
+                </div>
+                <div>
+                    <p id="speed"></p>
+                    <p id="defense"></p>
+                </div>
+               
+            </div>
+            <div class="containerCardFooterAbility">
+                <p id="stats">habilidades</p>
+                <div id="abilitys">
+                    
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>
