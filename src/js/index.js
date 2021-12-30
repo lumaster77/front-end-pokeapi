@@ -119,15 +119,17 @@ function getOnePokemon(id){
 function findOnePokemon(){
     const inputSearch =  document.getElementById('search').value;
     const id = inputSearch
-    console.log(id)
     getOnePokemon(id)
 }
 function menu(){
-
-
+   
 }
 
 function team(){
+    for(let i=0; i<0; i++){
+        getOnePokemon(ramdomPokemons())
+        console.log(hola)
+    }
 
 
 }
