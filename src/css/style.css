@@ -1,13 +1,50 @@
+:root{
+    --primary-color:#30475E ;
+    --secundary-color:#121212;
+    --third-color:#F05454;
+    --fourth-color:#F5F5F5;
+}
+
+html{
+    width: 100%;
+    height: auto;
+}
 body{
-    background: linear-gradient(#1FE5BD, #D22780);
-    
+    background: no-repeat linear-gradient(var(--third-color) , var(--primary-color) );
     font-family: 'Muli', sans-serif;
     font-size: 20px;
     
 }
-h1{
-    text-align: center;
+body h1{
+    display: flex;
+    justify-content: center;
 }
+.menu{
+    padding: 15px;
+
+}
+
+.menu .menuContainer {
+list-style: none;
+padding: 0;
+margin: 0;
+background: var(--secundary-color);
+}
+
+.menu .menuContainerOption a{
+    color: var(--fourth-color);
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.menu .menuContainerOption a:hover{
+    background: var(--third-color);
+    color: var(--fourth-color);
+}
+
+
+
 #head {
     display: flex;
     flex-direction: row;
@@ -21,13 +58,52 @@ input {
 }
 
 .container{
-    color: lightgray;
+    color: var(--secundary-color);
     display: flex;
     justify-content: center ;
     width: auto;
     height: auto;
 }
+.container .containerCard{
+    display: flex;
 
+}
+#pokemons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.containerPokemons{
+    display: flex;
+    flex-direction: row;
+    
+}
+.containerPokemons:hover{
+    transform: scale(1.1, 1.1);
+}
+.cardPokemon{
+    display: flex;
+    align-items:center ;
+    flex-direction: column-reverse;
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+    color: var(--secundary-color);
+    font-size: small;
+    background-color: var(--fourth-color);
+    border-radius: 100% / 50%;
+    border: solid 1px var(--secundary-color) ;
+    box-shadow: 5px 20px 20px black ;
+}
+
+.cardPokemon div{
+    padding: 10px;
+}
+.cardPokemon div img{
+    padding-top: 200px;
+    border-bottom: solid 2px var(--secundary-color);
+}
 .containerCard{
     display: flex;
     flex-direction: column;
@@ -36,23 +112,28 @@ input {
     margin-top: 10px;
     padding: 20px;
     border-radius: 5% / 10%;
-    background-color: #5E227F;
-    border: solid 1px #002 ;
+    background-color: var(--fourth-color);
+    border: solid 1px var(--secundary-color) ;
     box-shadow: 5px 20px 20px black ;
 }
 .containerCardHeader{
     display: flex;
     justify-content: space-around;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px var(--fourth-color);
     padding: 1px 10px 1px 10px;
     font-size: larger;
+}
+
+.containerCardHeader div{
+    padding-left: 10px;
 }
 
 .containerCardBody{
     display: flex;
     flex-direction: column;
     border-radius: 5%;
-    background-color: #41A7B3;
+    color: var(--fourth-color);
+    background-color: var(--primary-color);
 }
 
 .containerCardBodyImage{
@@ -70,7 +151,7 @@ input {
     display: flex;
     flex-direction:row;
     justify-content: center;
-    border-top: solid 2px #002 ;
+    border-top: solid 2px var(--secundary-color) ;
        
 }
 
@@ -78,9 +159,11 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     margin-bottom: 3px;
     
+}
+#species div{
+    padding: 10px;
 }
 
 
@@ -114,7 +197,8 @@ input {
 }
 
 #abilitys {
-    background-color: #002;
+    background-color: var(--secundary-color);
+    color: var(--fourth-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -124,3 +208,9 @@ input {
     padding: 10px;
 }
 
+@media screen and (min-width: 480px){
+    .menu .menuContainer{
+        display: flex;
+        justify-content: center;
+    }
+}

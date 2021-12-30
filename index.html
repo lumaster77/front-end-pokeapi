@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <nav id="menu" class="menu">
+        <ul class="menuContainer">
+          
+            <il class="menuContainerOption"><a id="allPokemones" href="#" onclick="GetAllPokemons();">Pokemones</a></il>
+            <il class="menuContainerOption"><a id="hamburguesas" href="#" onclick="menu();">Menu</a></il>
+            <il class="menuContainerOption"><a id="team" href="#" onclick="team();">Equipo</a></il>
+        </ul>
+    </nav>
+    <h1>Pokedex </h1>
+    <div id="head">
+        <div>
+          <input type="text" name="" id="search" />
+        </div>
+        <div>
+          <input
+            type="button"
+            id="btnSearch"
+            onclick="findOnePokemon()"
+            value="buscar"
+          />
+        </div>
+      </div>
+    <div id="pokemons" class="container"></div>
+    <div id="pokemon" class="container"></div>
+    
+</body>
+<script src="./src/js/index.js"></script>
+</html>
